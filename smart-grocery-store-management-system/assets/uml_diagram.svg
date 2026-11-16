@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1210" viewBox="0 0 1000 1210" role="img" aria-labelledby="title desc">
+<title id="title">Application module diagram</title><desc id="desc">A procedural application: one module, two record lists and twelve functions.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#52627B"/></marker></defs>
+<rect width="1000" height="1210" fill="#FFFFFF"/>
+<text x="38" y="44" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start">Application module diagram</text>
+<text x="38" y="75" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">A procedural application: one module, two record lists and twelve functions.</text>
+<rect x="26" y="100" width="948" height="1020" rx="18" fill="#FFFFFF" stroke="#CCD7E7" stroke-width="1.5"/>
+<text x="50" y="130" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">«module»  smart_grocery_store.py</text>
+<rect x="50" y="152" width="415" height="157" rx="10" fill="#F5F7FB" stroke="#B7C5D8" stroke-width="1.5"/>
+<text x="68" y="180" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">CONSTANTS</text>
+<text x="68" y="208" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">LOW_STOCK_THRESHOLD = 5</text>
+<text x="68" y="234" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">PRICE_DECIMAL_PLACES = 2</text>
+<text x="68" y="260" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">MAX_INTEGER_DIGITS = 18</text>
+<text x="68" y="286" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">MAIN_MENU: eight-option menu text</text>
+<rect x="505" y="152" width="445" height="157" rx="10" fill="#ECF4FF" stroke="#AFCCF2" stroke-width="1.5"/>
+<text x="523" y="180" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">IN-MEMORY STATE</text>
+<text x="523" y="205" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">products: list[dict]</text>
+<text x="523" y="225" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">  id, name, category, price, stock</text>
+<text x="523" y="245" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">sales: list[dict]</text>
+<text x="523" y="265" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">  product_id, product_name,</text>
+<text x="523" y="285" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">  quantity_sold, total_amount</text>
+<rect x="50" y="370" width="280" height="165" rx="12" fill="#F3EDFC" stroke="#CDB7EC" stroke-width="1.5"/>
+<text x="68" y="400" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">ENTRY POINT</text>
+<text x="68" y="435" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" text-anchor="start">main()</text>
+<text x="68" y="468" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">while loop + if / elif / else</text>
+<text x="68" y="496" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">choice 8 → print + break</text>
+<rect x="425" y="370" width="525" height="283" rx="12" fill="#EAF8F0" stroke="#A6D8BF" stroke-width="1.5"/>
+<text x="445" y="400" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">MENU OPERATIONS</text>
+<text x="445" y="433" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">1  add_product()</text>
+<text x="445" y="462" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">2  view_products()</text>
+<text x="445" y="491" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">3  search_product()</text>
+<text x="445" y="520" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">4  update_stock()</text>
+<text x="445" y="549" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">5  process_sale()</text>
+<text x="445" y="578" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">6  view_sales()</text>
+<text x="445" y="607" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="start">7  generate_report()</text>
+<polyline points="330,450 425,450" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="345.7578125" y="423" width="60.484375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="376" y="438" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">«calls»</text>
+<polyline points="725,309 725,370" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="755.5390625" y="326" width="106.921875" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="809" y="341" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">reads / writes</text>
+<rect x="50" y="785" width="415" height="205" rx="12" fill="#ECF4FF" stroke="#AFCCF2" stroke-width="1.5"/>
+<text x="68" y="816" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">INPUT HELPERS</text>
+<text x="68" y="856" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">read_integer(prompt, minimum=0)</text>
+<text x="68" y="887" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">read_price()</text>
+<text x="68" y="924" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Retry invalid numeric input using while.</text>
+<text x="68" y="953" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Check syntax before numeric conversion.</text>
+<rect x="505" y="785" width="445" height="205" rx="12" fill="#F5F7FB" stroke="#B7C5D8" stroke-width="1.5"/>
+<text x="523" y="816" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">LOOKUP AND DISPLAY HELPERS</text>
+<text x="523" y="856" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">find_product(product_id)</text>
+<text x="523" y="887" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start">display_product(product)</text>
+<text x="523" y="924" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Find an ID or return None.</text>
+<text x="523" y="953" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Print five fields with a two-decimal price.</text>
+<polyline points="560,653 560,703 258,703 258,785" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="296.515625" y="680" width="200.96875" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="397" y="695" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">add / update / sale: «calls»</text>
+<polyline points="780,653 780,785" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)" stroke-dasharray="6 5"/>
+<rect x="797.7578125" y="722" width="60.484375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="828" y="737" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">«calls»</text>
+<text x="50" y="1040" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">The main guard calls main() only when the file is executed directly.</text>
+<text x="50" y="1073" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Dashed arrows show selected call and shared-state dependencies.</text>
+<text x="38" y="1171" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">No application classes, inheritance or database entities are required.</text>
+</svg>

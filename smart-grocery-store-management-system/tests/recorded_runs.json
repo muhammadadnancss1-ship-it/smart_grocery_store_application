@@ -1,0 +1,2445 @@
+{
+  "verified_on": "2026-11-16",
+  "python_version": "3.12.14",
+  "application_sha256": "94537196ffc8db2c1c495175e3072f78129518823b74afb963dd76f8bace25e0",
+  "tests_run": 72,
+  "failures": 0,
+  "errors": 0,
+  "scenario_count": 70,
+  "capture_method": "Real main() execution via runpy; input reader echoes supplied values; final lists asserted.",
+  "scenarios": [
+    {
+      "id": "T01",
+      "scenario": "Empty inventory",
+      "inputs": [
+        "2",
+        "8"
+      ],
+      "expected_result": "No products available.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 2\nNo products available.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T02",
+      "scenario": "Add a product",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "Mango saved: ID 2, price 200.00, stock 20.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T03",
+      "scenario": "Duplicate ID",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "1",
+        "2",
+        "8"
+      ],
+      "expected_result": "Duplicate rejected; two products remain.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nProduct ID already exists. Product not added.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T04",
+      "scenario": "View all products",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "2",
+        "8"
+      ],
+      "expected_result": "Both products display all five fields.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 2\n--- Products ---\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 20\nID: 4 | Name: potato | Category: vegetable | Price: 150.00 | Stock: 9\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T05",
+      "scenario": "Search by ID",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "3",
+        "2",
+        "8"
+      ],
+      "expected_result": "Mango details display.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: 2\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 20\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T06",
+      "scenario": "Search by mixed-case name",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "3",
+        "mAnGo",
+        "8"
+      ],
+      "expected_result": "Mango details display.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: mAnGo\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 20\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T07",
+      "scenario": "Missing search result",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "3",
+        "999",
+        "8"
+      ],
+      "expected_result": "Product not found.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: 999\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T08",
+      "scenario": "Add stock",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "2",
+        "1",
+        "5",
+        "8"
+      ],
+      "expected_result": "Mango stock becomes 25.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 2\n1. Add stock\n2. Replace stock\nChoose stock action: 1\nEnter quantity to add: 5\nStock updated. Mango: 25\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 25
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T09",
+      "scenario": "Replace stock",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "4",
+        "2",
+        "3",
+        "8"
+      ],
+      "expected_result": "Potato stock becomes 3.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 4\n1. Add stock\n2. Replace stock\nChoose stock action: 2\nEnter new stock quantity: 3\nStock updated. potato: 3\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 3
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T10",
+      "scenario": "Update unknown ID",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "1",
+        "8"
+      ],
+      "expected_result": "Product not found; stocks stay 20 and 9.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 1\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T11",
+      "scenario": "Successful sale",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "8"
+      ],
+      "expected_result": "Total 450.00; potato stock 6; one sale.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 6
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "scenario": "Insufficient stock",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "10",
+        "8"
+      ],
+      "expected_result": "Sale rejected; stock 9; no sales.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 10\nInsufficient stock. Available: 9. Sale not recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T13",
+      "scenario": "Invalid sale quantities",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "0",
+        "-2",
+        "abc",
+        "1",
+        "8"
+      ],
+      "expected_result": "Three errors; quantity 1 sells for 150.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter purchase quantity: -2\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter purchase quantity: abc\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter purchase quantity: 1\nSale completed.\nProduct: potato | ID: 4\nQuantity: 1 | Total: 150.00\nRemaining stock: 8\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 8
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 1,
+          "total_amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "scenario": "Sale with unknown ID",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "1",
+        "8"
+      ],
+      "expected_result": "Product not found; no sale.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T15",
+      "scenario": "Empty sales history",
+      "inputs": [
+        "6",
+        "8"
+      ],
+      "expected_result": "No sales recorded.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 6\nNo sales recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T16",
+      "scenario": "View completed sales",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "6",
+        "8"
+      ],
+      "expected_result": "History shows ID 4, potato, quantity 3, total 450.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 6\n--- Sales Records ---\nProduct ID: 4 | Product: potato | Quantity: 3 | Total: 450.00\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 6
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "scenario": "Worked-example report",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "7",
+        "8"
+      ],
+      "expected_result": "2 products; 26 units; 1 transaction; revenue 450.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 26\nTotal sales transactions: 1\nTotal revenue generated: 450.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 6
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "scenario": "Empty report",
+      "inputs": [
+        "7",
+        "8"
+      ],
+      "expected_result": "Zero totals; no low stock; price extrema N/A.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 0\nTotal available stock: 0\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: N/A\nLowest-priced product: N/A\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T19",
+      "scenario": "Low-stock boundaries together",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "2",
+        "2",
+        "0",
+        "4",
+        "4",
+        "2",
+        "4",
+        "1",
+        "6",
+        "Water",
+        "Drinks",
+        "10",
+        "5",
+        "7",
+        "8"
+      ],
+      "expected_result": "Stocks 0 and 4 appear as low stock; stock 5 is excluded.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 2\n1. Add stock\n2. Replace stock\nChoose stock action: 2\nEnter new stock quantity: 0\nStock updated. Mango: 0\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 4\n1. Add stock\n2. Replace stock\nChoose stock action: 2\nEnter new stock quantity: 4\nStock updated. potato: 4\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 6\nEnter product name: Water\nEnter product category: Drinks\nEnter product price: 10\nEnter available stock: 5\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 3\nTotal available stock: 9\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 0\nID: 4 | Name: potato | Category: vegetable | Price: 150.00 | Stock: 4\nHighest-priced product: Mango (200.00)\nLowest-priced product: Water (10.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 0
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 4
+        },
+        {
+          "id": 6,
+          "name": "Water",
+          "category": "Drinks",
+          "price": 10.0,
+          "stock": 5
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T20",
+      "scenario": "Invalid IDs and initial stock",
+      "inputs": [
+        "1",
+        "abc",
+        "2.5",
+        "-1",
+        "0",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "-1",
+        "x",
+        "1.5",
+        "20",
+        "8"
+      ],
+      "expected_result": "Seven numeric errors; valid Mango saved with stock 20.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: abc\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 2.5\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: -1\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: -1\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter available stock: x\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter available stock: 1.5\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T21",
+      "scenario": "Invalid prices",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "-1",
+        "abc",
+        "nan",
+        "inf",
+        "1.2.3",
+        "",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "Six price errors; price 200.00 accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: -1\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: abc\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: nan\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: inf\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: 1.2.3\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: \nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T22",
+      "scenario": "Zero price and stock",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "0",
+        "0",
+        "8"
+      ],
+      "expected_result": "Zero price and zero stock accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 0\nEnter available stock: 0\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 0.0,
+          "stock": 0
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T23",
+      "scenario": "Blank product fields together",
+      "inputs": [
+        "1",
+        "2",
+        "",
+        "1",
+        "2",
+        "Mango",
+        "   ",
+        "8"
+      ],
+      "expected_result": "Both attempts rejected; no products saved.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: \nProduct name cannot be blank. Product not added.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category:    \nProduct category cannot be blank. Product not added.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T24",
+      "scenario": "Invalid menu choices",
+      "inputs": [
+        "0",
+        "9",
+        "abc",
+        "8"
+      ],
+      "expected_result": "Three invalid-choice messages; menu continues.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 0\nInvalid choice. Enter a number from 1 to 8.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 9\nInvalid choice. Enter a number from 1 to 8.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: abc\nInvalid choice. Enter a number from 1 to 8.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T25",
+      "scenario": "Invalid stock action",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "2",
+        "9",
+        "8"
+      ],
+      "expected_result": "Invalid action; both stocks unchanged.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 2\n1. Add stock\n2. Replace stock\nChoose stock action: 9\nInvalid stock action. Stock unchanged.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T26",
+      "scenario": "Price rounding",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "12.346",
+        "1",
+        "2",
+        "8"
+      ],
+      "expected_result": "Price stored and displayed as 12.35.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 12.346\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 2\n--- Products ---\nID: 2 | Name: Mango | Category: Fruit | Price: 12.35 | Stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 12.35,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T27",
+      "scenario": "No low-stock products",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "7",
+        "8"
+      ],
+      "expected_result": "Low-stock section says None.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 29\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T28",
+      "scenario": "Equal product prices",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "200",
+        "9",
+        "7",
+        "8"
+      ],
+      "expected_result": "First-added Mango is both highest and lowest.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 200\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 29\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: Mango (200.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 200.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T29",
+      "scenario": "Exit",
+      "inputs": [
+        "8"
+      ],
+      "expected_result": "Goodbye prints once and the menu stops.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T30",
+      "scenario": "Restart clears records",
+      "inputs": [
+        "2",
+        "6",
+        "8"
+      ],
+      "expected_result": "Second session starts with empty products and sales.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 2\nNo products available.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 6\nNo sales recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": [],
+      "prior_session": {
+        "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+        "products": [
+          {
+            "id": 2,
+            "name": "Mango",
+            "category": "Fruit",
+            "price": 200.0,
+            "stock": 20
+          },
+          {
+            "id": 4,
+            "name": "potato",
+            "category": "vegetable",
+            "price": 150.0,
+            "stock": 6
+          }
+        ],
+        "sales": [
+          {
+            "product_id": 4,
+            "product_name": "potato",
+            "quantity_sold": 3,
+            "total_amount": 450.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "T31",
+      "scenario": "Minimum product ID",
+      "inputs": [
+        "1",
+        "1",
+        "Rice",
+        "Grain",
+        "10",
+        "1",
+        "8"
+      ],
+      "expected_result": "ID 1 is accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Rice\nEnter product category: Grain\nEnter product price: 10\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Rice",
+          "category": "Grain",
+          "price": 10.0,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T32",
+      "scenario": "Sell all available stock",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "9",
+        "7",
+        "8"
+      ],
+      "expected_result": "Sale 1350.00 succeeds; stock becomes 0 and is low.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 9\nSale completed.\nProduct: potato | ID: 4\nQuantity: 9 | Total: 1350.00\nRemaining stock: 0\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 20\nTotal sales transactions: 1\nTotal revenue generated: 1350.00\nProducts below 5 units:\nID: 4 | Name: potato | Category: vegetable | Price: 150.00 | Stock: 0\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 0
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 9,
+          "total_amount": 1350.0
+        }
+      ]
+    },
+    {
+      "id": "T33",
+      "scenario": "Zero-price sale",
+      "inputs": [
+        "1",
+        "1",
+        "Water",
+        "Drinks",
+        "0",
+        "2",
+        "5",
+        "1",
+        "1",
+        "8"
+      ],
+      "expected_result": "One free sale recorded; stock 1; revenue 0.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Water\nEnter product category: Drinks\nEnter product price: 0\nEnter available stock: 2\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nEnter purchase quantity: 1\nSale completed.\nProduct: Water | ID: 1\nQuantity: 1 | Total: 0.00\nRemaining stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Water",
+          "category": "Drinks",
+          "price": 0.0,
+          "stock": 1
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 1,
+          "product_name": "Water",
+          "quantity_sold": 1,
+          "total_amount": 0.0
+        }
+      ]
+    },
+    {
+      "id": "T34",
+      "scenario": "Repeated sales",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "5",
+        "4",
+        "2",
+        "7",
+        "8"
+      ],
+      "expected_result": "Two sales; revenue 750.00; potato stock 4.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 2\nSale completed.\nProduct: potato | ID: 4\nQuantity: 2 | Total: 300.00\nRemaining stock: 4\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 24\nTotal sales transactions: 2\nTotal revenue generated: 750.00\nProducts below 5 units:\nID: 4 | Name: potato | Category: vegetable | Price: 150.00 | Stock: 4\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 4
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        },
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 2,
+          "total_amount": 300.0
+        }
+      ]
+    },
+    {
+      "id": "T35",
+      "scenario": "Invalid stock additions",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "2",
+        "1",
+        "0",
+        "-1",
+        "abc",
+        "1.5",
+        "1",
+        "8"
+      ],
+      "expected_result": "Four errors; only valid addition 1 changes stock to 21.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 2\n1. Add stock\n2. Replace stock\nChoose stock action: 1\nEnter quantity to add: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter quantity to add: -1\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter quantity to add: abc\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter quantity to add: 1.5\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter quantity to add: 1\nStock updated. Mango: 21\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 21
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T36",
+      "scenario": "Invalid replacement counts",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "4",
+        "2",
+        "-1",
+        "abc",
+        "1.5",
+        "0",
+        "8"
+      ],
+      "expected_result": "Three errors; valid replacement 0 is accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 4\n1. Add stock\n2. Replace stock\nChoose stock action: 2\nEnter new stock quantity: -1\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter new stock quantity: abc\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter new stock quantity: 1.5\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter new stock quantity: 0\nStock updated. potato: 0\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 0
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T37",
+      "scenario": "Spaces-only product name",
+      "inputs": [
+        "1",
+        "2",
+        "   ",
+        "8"
+      ],
+      "expected_result": "Name rejected; no record saved.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name:    \nProduct name cannot be blank. Product not added.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T38",
+      "scenario": "Empty category",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "",
+        "8"
+      ],
+      "expected_result": "Category rejected; no record saved.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: \nProduct category cannot be blank. Product not added.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T39",
+      "scenario": "Invalid ID during sale",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "0",
+        "abc",
+        "-1",
+        "4",
+        "1",
+        "8"
+      ],
+      "expected_result": "Three ID errors; valid potato sale records 150.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: abc\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: -1\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 4\nEnter purchase quantity: 1\nSale completed.\nProduct: potato | ID: 4\nQuantity: 1 | Total: 150.00\nRemaining stock: 8\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 8
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 1,
+          "total_amount": 150.0
+        }
+      ]
+    },
+    {
+      "id": "T40",
+      "scenario": "Invalid ID during update",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "0",
+        "x",
+        "4",
+        "1",
+        "1",
+        "8"
+      ],
+      "expected_result": "Two ID errors; potato stock becomes 10.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: x\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 4\n1. Add stock\n2. Replace stock\nChoose stock action: 1\nEnter quantity to add: 1\nStock updated. potato: 10\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 10
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T41",
+      "scenario": "Blank search",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "3",
+        "   ",
+        "8"
+      ],
+      "expected_result": "Search cannot be blank.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name:    \nSearch cannot be blank.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T42",
+      "scenario": "Partial name is not a match",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "3",
+        "Man",
+        "8"
+      ],
+      "expected_result": "Product not found.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: Man\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T43",
+      "scenario": "Duplicate names with distinct IDs",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "1",
+        "9",
+        "Mango",
+        "Other",
+        "10",
+        "1",
+        "3",
+        "MANGO",
+        "8"
+      ],
+      "expected_result": "Both exact-name matches display.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 9\nEnter product name: Mango\nEnter product category: Other\nEnter product price: 10\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: MANGO\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 20\nID: 9 | Name: Mango | Category: Other | Price: 10.00 | Stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        },
+        {
+          "id": 9,
+          "name": "Mango",
+          "category": "Other",
+          "price": 10.0,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T44",
+      "scenario": "Stock exactly five",
+      "inputs": [
+        "1",
+        "1",
+        "Boundary",
+        "Test",
+        "10",
+        "5",
+        "7",
+        "8"
+      ],
+      "expected_result": "Stock 5 is not low.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Boundary\nEnter product category: Test\nEnter product price: 10\nEnter available stock: 5\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 1\nTotal available stock: 5\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: Boundary (10.00)\nLowest-priced product: Boundary (10.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Boundary",
+          "category": "Test",
+          "price": 10.0,
+          "stock": 5
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T45",
+      "scenario": "Stock exactly four",
+      "inputs": [
+        "1",
+        "1",
+        "Boundary",
+        "Test",
+        "10",
+        "4",
+        "7",
+        "8"
+      ],
+      "expected_result": "Stock 4 is listed as low.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Boundary\nEnter product category: Test\nEnter product price: 10\nEnter available stock: 4\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 1\nTotal available stock: 4\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nID: 1 | Name: Boundary | Category: Test | Price: 10.00 | Stock: 4\nHighest-priced product: Boundary (10.00)\nLowest-priced product: Boundary (10.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Boundary",
+          "category": "Test",
+          "price": 10.0,
+          "stock": 4
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T46",
+      "scenario": "Stock exactly zero",
+      "inputs": [
+        "1",
+        "1",
+        "Boundary",
+        "Test",
+        "10",
+        "0",
+        "7",
+        "8"
+      ],
+      "expected_result": "Stock 0 is listed as low.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Boundary\nEnter product category: Test\nEnter product price: 10\nEnter available stock: 0\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 1\nTotal available stock: 0\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nID: 1 | Name: Boundary | Category: Test | Price: 10.00 | Stock: 0\nHighest-priced product: Boundary (10.00)\nLowest-priced product: Boundary (10.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Boundary",
+          "category": "Test",
+          "price": 10.0,
+          "stock": 0
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T47",
+      "scenario": "One-product extrema",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "7",
+        "8"
+      ],
+      "expected_result": "Mango appears as both highest and lowest.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 1\nTotal available stock: 20\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: Mango (200.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T48",
+      "scenario": "Leading decimal point",
+      "inputs": [
+        "1",
+        "1",
+        "Sample",
+        "Test",
+        ".50",
+        "1",
+        "8"
+      ],
+      "expected_result": "Price .50 is accepted as 0.50.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Sample\nEnter product category: Test\nEnter product price: .50\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Sample",
+          "category": "Test",
+          "price": 0.5,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T49",
+      "scenario": "Trailing decimal point",
+      "inputs": [
+        "1",
+        "1",
+        "Sample",
+        "Test",
+        "12.",
+        "1",
+        "8"
+      ],
+      "expected_result": "Price 12. is accepted as 12.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Sample\nEnter product category: Test\nEnter product price: 12.\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Sample",
+          "category": "Test",
+          "price": 12.0,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T50",
+      "scenario": "Non-ASCII prices",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "١٢",
+        "²",
+        "１２",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "Three non-ASCII prices rejected; 200 accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: ١٢\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: ²\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: １２\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T51",
+      "scenario": "Non-ASCII integer digits",
+      "inputs": [
+        "1",
+        "٢",
+        "²",
+        "２",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "Three non-ASCII IDs rejected; ID 2 accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: ٢\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: ²\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: ２\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T52",
+      "scenario": "Oversized integer",
+      "inputs": [
+        "1",
+        "9999999999999999999",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "19 significant digits rejected; ID 2 accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 9999999999999999999\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T53",
+      "scenario": "Leading zeros",
+      "inputs": [
+        "1",
+        "00000000000000000000000002",
+        "Mango",
+        "Fruit",
+        "200",
+        "00020",
+        "8"
+      ],
+      "expected_result": "Leading zeros normalize to ID 2 and stock 20.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 00000000000000000000000002\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 00020\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T54",
+      "scenario": "Price overflow",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+        "200",
+        "20",
+        "8"
+      ],
+      "expected_result": "Non-finite price rejected; 200 accepted.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T55",
+      "scenario": "Sale amount overflow",
+      "inputs": [
+        "1",
+        "1",
+        "Large",
+        "Test",
+        "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "2",
+        "5",
+        "1",
+        "2",
+        "8"
+      ],
+      "expected_result": "Unrepresentable sale rejected; stock 2; no sales.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Large\nEnter product category: Test\nEnter product price: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\nEnter available stock: 2\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nEnter purchase quantity: 2\nSale amount is too large. Stock unchanged; sale not recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Large",
+          "category": "Test",
+          "price": 1e+308,
+          "stock": 2
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T56",
+      "scenario": "Accumulated revenue overflow",
+      "inputs": [
+        "1",
+        "1",
+        "Large",
+        "Test",
+        "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "2",
+        "5",
+        "1",
+        "1",
+        "5",
+        "1",
+        "1",
+        "8"
+      ],
+      "expected_result": "First sale succeeds; second rejected; stock 1; one finite sale.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Large\nEnter product category: Test\nEnter product price: 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000\nEnter available stock: 2\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nEnter purchase quantity: 1\nSale completed.\nProduct: Large | ID: 1\nQuantity: 1 | Total: 100000000000000001097906362944045541740492309677311846336810682903157585404911491537163328978494688899061249669721172515611590283743140088328307009198146046031271664502933027185697489699588559043338384466165001178426897626212945177628091195786707458122783970171784415105291802893207873272974885715430223118336.00\nRemaining stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nEnter purchase quantity: 1\nSale amount is too large. Stock unchanged; sale not recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Large",
+          "category": "Test",
+          "price": 1e+308,
+          "stock": 1
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 1,
+          "product_name": "Large",
+          "quantity_sold": 1,
+          "total_amount": 1e+308
+        }
+      ]
+    },
+    {
+      "id": "T57",
+      "scenario": "Several invalid fields in one session",
+      "inputs": [
+        "1",
+        "abc",
+        "0",
+        "3",
+        "Rice",
+        "Grain",
+        "-1",
+        "nan",
+        "10",
+        "-1",
+        "x",
+        "2",
+        "5",
+        "3",
+        "0",
+        "bad",
+        "2",
+        "7",
+        "8"
+      ],
+      "expected_result": "Six integer and two price errors; valid sale totals 20.00; stock 0.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: abc\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter product ID: 3\nEnter product name: Rice\nEnter product category: Grain\nEnter product price: -1\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: nan\nInvalid price. Enter a finite decimal number of 0 or more.\nEnter product price: 10\nEnter available stock: -1\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter available stock: x\nInvalid input. Enter a whole number of 0 or more with at most 18 significant digits.\nEnter available stock: 2\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 3\nEnter purchase quantity: 0\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter purchase quantity: bad\nInvalid input. Enter a whole number of 1 or more with at most 18 significant digits.\nEnter purchase quantity: 2\nSale completed.\nProduct: Rice | ID: 3\nQuantity: 2 | Total: 20.00\nRemaining stock: 0\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 1\nTotal available stock: 0\nTotal sales transactions: 1\nTotal revenue generated: 20.00\nProducts below 5 units:\nID: 3 | Name: Rice | Category: Grain | Price: 10.00 | Stock: 0\nHighest-priced product: Rice (10.00)\nLowest-priced product: Rice (10.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 3,
+          "name": "Rice",
+          "category": "Grain",
+          "price": 10.0,
+          "stock": 0
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 3,
+          "product_name": "Rice",
+          "quantity_sold": 2,
+          "total_amount": 20.0
+        }
+      ]
+    },
+    {
+      "id": "T58",
+      "scenario": "Non-numeric stock action",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "4",
+        "2",
+        "abc",
+        "8"
+      ],
+      "expected_result": "Action rejected; Mango stock remains 20.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 2\n1. Add stock\n2. Replace stock\nChoose stock action: abc\nInvalid stock action. Stock unchanged.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T59",
+      "scenario": "Empty menu choice",
+      "inputs": [
+        "",
+        "8"
+      ],
+      "expected_result": "Invalid choice shown once before exit.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: \nInvalid choice. Enter a number from 1 to 8.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T60",
+      "scenario": "Rejected sale after a successful sale",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "5",
+        "4",
+        "7",
+        "8"
+      ],
+      "expected_result": "First sale retained; second rejected; stock 6; revenue 450.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 7\nInsufficient stock. Available: 6. Sale not recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 6
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T61",
+      "scenario": "Numeric full product name",
+      "inputs": [
+        "1",
+        "7",
+        "123",
+        "Test",
+        "10",
+        "1",
+        "3",
+        "123",
+        "8"
+      ],
+      "expected_result": "Full name 123 finds product ID 7.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 7\nEnter product name: 123\nEnter product category: Test\nEnter product price: 10\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: 123\nID: 7 | Name: 123 | Category: Test | Price: 10.00 | Stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 7,
+          "name": "123",
+          "category": "Test",
+          "price": 10.0,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T62",
+      "scenario": "Trim surrounding whitespace",
+      "inputs": [
+        " 1 ",
+        " 2 ",
+        " Mango ",
+        " Fruit ",
+        " 200 ",
+        " 20 ",
+        "8"
+      ],
+      "expected_result": "Whitespace stripped; clean values saved.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice:  1 \nEnter product ID:  2 \nEnter product name:  Mango \nEnter product category:  Fruit \nEnter product price:  200 \nEnter available stock:  20 \nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T63",
+      "scenario": "Sales history survives restocking",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "4",
+        "3",
+        "4",
+        "4",
+        "2",
+        "50",
+        "6",
+        "8"
+      ],
+      "expected_result": "History still shows quantity 3 and 450.00 after stock is set to 50.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 4\n1. Add stock\n2. Replace stock\nChoose stock action: 2\nEnter new stock quantity: 50\nStock updated. potato: 50\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 6\n--- Sales Records ---\nProduct ID: 4 | Product: potato | Quantity: 3 | Total: 450.00\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 50
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T64",
+      "scenario": "Report across different products",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "5",
+        "2",
+        "2",
+        "5",
+        "4",
+        "3",
+        "7",
+        "8"
+      ],
+      "expected_result": "2 products; 24 units; 2 transactions; revenue 850.00.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 2\nEnter purchase quantity: 2\nSale completed.\nProduct: Mango | ID: 2\nQuantity: 2 | Total: 400.00\nRemaining stock: 18\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 4\nEnter purchase quantity: 3\nSale completed.\nProduct: potato | ID: 4\nQuantity: 3 | Total: 450.00\nRemaining stock: 6\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 24\nTotal sales transactions: 2\nTotal revenue generated: 850.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 18
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 6
+        }
+      ],
+      "sales": [
+        {
+          "product_id": 2,
+          "product_name": "Mango",
+          "quantity_sold": 2,
+          "total_amount": 400.0
+        },
+        {
+          "product_id": 4,
+          "product_name": "potato",
+          "quantity_sold": 3,
+          "total_amount": 450.0
+        }
+      ]
+    },
+    {
+      "id": "T65",
+      "scenario": "Multiword exact name",
+      "inputs": [
+        "1",
+        "1",
+        "Brown Rice",
+        "Dry Goods",
+        "10",
+        "1",
+        "3",
+        "brown rice",
+        "8"
+      ],
+      "expected_result": "Exact multiword name matches ignoring case.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Brown Rice\nEnter product category: Dry Goods\nEnter product price: 10\nEnter available stock: 1\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: brown rice\nID: 1 | Name: Brown Rice | Category: Dry Goods | Price: 10.00 | Stock: 1\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Brown Rice",
+          "category": "Dry Goods",
+          "price": 10.0,
+          "stock": 1
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T66",
+      "scenario": "Menu continues after report",
+      "inputs": [
+        "1",
+        "2",
+        "Mango",
+        "Fruit",
+        "200",
+        "20",
+        "1",
+        "4",
+        "potato",
+        "vegetable",
+        "150",
+        "9",
+        "7",
+        "2",
+        "8"
+      ],
+      "expected_result": "Report returns to the menu; inventory can still be viewed.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 2\nEnter product name: Mango\nEnter product category: Fruit\nEnter product price: 200\nEnter available stock: 20\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 4\nEnter product name: potato\nEnter product category: vegetable\nEnter product price: 150\nEnter available stock: 9\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 7\n--- Store Report ---\nTotal products: 2\nTotal available stock: 29\nTotal sales transactions: 0\nTotal revenue generated: 0.00\nProducts below 5 units:\nNone.\nHighest-priced product: Mango (200.00)\nLowest-priced product: potato (150.00)\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 2\n--- Products ---\nID: 2 | Name: Mango | Category: Fruit | Price: 200.00 | Stock: 20\nID: 4 | Name: potato | Category: vegetable | Price: 150.00 | Stock: 9\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 2,
+          "name": "Mango",
+          "category": "Fruit",
+          "price": 200.0,
+          "stock": 20
+        },
+        {
+          "id": 4,
+          "name": "potato",
+          "category": "vegetable",
+          "price": 150.0,
+          "stock": 9
+        }
+      ],
+      "sales": []
+    },
+    {
+      "id": "T67",
+      "scenario": "Sale in empty inventory",
+      "inputs": [
+        "5",
+        "1",
+        "8"
+      ],
+      "expected_result": "Product not found; no sale.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T68",
+      "scenario": "Update in empty inventory",
+      "inputs": [
+        "4",
+        "1",
+        "8"
+      ],
+      "expected_result": "Product not found; no products.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 4\nEnter product ID: 1\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T69",
+      "scenario": "Search in empty inventory",
+      "inputs": [
+        "3",
+        "Mango",
+        "8"
+      ],
+      "expected_result": "Product not found.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 3\nEnter product ID or full name: Mango\nProduct not found.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [],
+      "sales": []
+    },
+    {
+      "id": "T70",
+      "scenario": "Zero-stock sale",
+      "inputs": [
+        "1",
+        "1",
+        "Water",
+        "Drinks",
+        "0",
+        "0",
+        "5",
+        "1",
+        "1",
+        "8"
+      ],
+      "expected_result": "Sale rejected even at zero price; stock remains 0.",
+      "status": "PASS",
+      "stdout": "\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 1\nEnter product ID: 1\nEnter product name: Water\nEnter product category: Drinks\nEnter product price: 0\nEnter available stock: 0\nProduct added successfully.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 5\nEnter product ID: 1\nEnter purchase quantity: 1\nInsufficient stock. Available: 0. Sale not recorded.\n\n=== Smart Grocery Store Management System ===\n1. Add New Product\n2. View All Products\n3. Search Product\n4. Update Product Stock\n5. Process Customer Sale\n6. View Sales Records\n7. Generate Store Report\n8. Exit\nEnter your choice: 8\nGoodbye!\n",
+      "products": [
+        {
+          "id": 1,
+          "name": "Water",
+          "category": "Drinks",
+          "price": 0.0,
+          "stock": 0
+        }
+      ],
+      "sales": []
+    }
+  ],
+  "process_checks": [
+    {
+      "id": "P01",
+      "scenario": "Import has no interactive side effects",
+      "status": "PASS"
+    },
+    {
+      "id": "P02",
+      "scenario": "Separate-process restart clears records and writes no data files",
+      "status": "PASS"
+    }
+  ]
+}

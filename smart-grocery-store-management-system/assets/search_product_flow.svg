@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1550" viewBox="0 0 1000 1550" role="img" aria-labelledby="title desc">
+<title id="title">03 / Search Product</title><desc id="desc">An ID or a full-name match succeeds; name comparisons use casefold().</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#52627B"/></marker></defs>
+<rect width="1000" height="1550" fill="#FFFFFF"/>
+<text x="38" y="44" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start">03 / Search Product</text>
+<text x="38" y="75" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">An ID or a full-name match succeeds; name comparisons use casefold().</text>
+<rect x="210.0" y="110.0" width="280" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="137.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Start: menu choice 3</text>
+<polygon points="178.0,190.0 540.0,190.0 522.0,260.0 160.0,260.0" fill="#ECF4FF" stroke="#1763BC" stroke-width="1.6"/>
+<text x="350" y="230.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Read and trim search query</text>
+<polygon points="350,297.0 540.0,355 350,413.0 160.0,355" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="360.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Query blank?</text>
+<rect x="670.0" y="320.0" width="280" height="70" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="360.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print blank-search error</text>
+<rect x="160.0" y="459.0" width="380" height="82" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="494.04999999999995" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Normalize ID if numeric; set found =</text>
+<text x="350" y="517.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">False</text>
+<polygon points="350,577.0 540.0,635 350,693.0 160.0,635" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="640.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Unvisited product remains?</text>
+<polygon points="350,717.0 540.0,775 350,833.0 160.0,775" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="780.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">ID or full name matches?</text>
+<rect x="670.0" y="730.0" width="280" height="90" rx="12" fill="#EAF8F0" stroke="#168052" stroke-width="1.5"/>
+<text x="810" y="769.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Display product; set found =</text>
+<text x="810" y="792.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">True</text>
+<rect x="160.0" y="920.0" width="380" height="70" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="960.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Advance to the next product</text>
+<polygon points="350,1077.0 540.0,1135 350,1193.0 160.0,1135" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="1140.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Any match found?</text>
+<rect x="670.0" y="1100.0" width="280" height="70" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="1140.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print Product not found.</text>
+<rect x="220.0" y="1408.0" width="260" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="1435.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Return to menu</text>
+<polyline points="350,154 350,190" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,260 350,297" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,413 350,459" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,541 350,577" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,693 350,717" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,833 350,920" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1193 350,1408" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="540,355 670,355" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="587.703125" y="330" width="34.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="345" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Yes</text>
+<text x="366" y="443" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">No</text>
+<polyline points="950,355 978,355 978,1430 480,1430" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="540,775 670,775" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="587.703125" y="750" width="34.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="765" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Yes</text>
+<polyline points="810,820 810,955 540,955" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="366" y="860" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">No</text>
+<polyline points="350,990 100,990 100,635 160,635" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="77.703125" y="840" width="44.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="100" y="855" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Next</text>
+<polyline points="160,635 65,635 65,1135 160,1135" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="49.484375" y="1075" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="65" y="1090" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<text x="366" y="713" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<polyline points="540,1135 670,1135" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="1109" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="1124" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="810,1170 810,1430 480,1430" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="366" y="1225" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<text x="39" y="1490" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">An empty list skips the product loop and reaches the no-match output.</text>
+<rect x="40" y="1501" width="12" height="12" rx="3" fill="#1763BC" stroke="none" stroke-width="1.5"/>
+<text x="60" y="1512" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Input</text>
+<rect x="205" y="1501" width="12" height="12" rx="3" fill="#7544BF" stroke="none" stroke-width="1.5"/>
+<text x="225" y="1512" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Decision</text>
+<rect x="410" y="1501" width="12" height="12" rx="3" fill="#168052" stroke="none" stroke-width="1.5"/>
+<text x="430" y="1512" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Success / output</text>
+<rect x="665" y="1501" width="12" height="12" rx="3" fill="#BC3744" stroke="none" stroke-width="1.5"/>
+<text x="685" y="1512" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Error</text>
+<rect x="810" y="1501" width="12" height="12" rx="3" fill="#9D6200" stroke="none" stroke-width="1.5"/>
+<text x="830" y="1512" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Warning</text>
+</svg>

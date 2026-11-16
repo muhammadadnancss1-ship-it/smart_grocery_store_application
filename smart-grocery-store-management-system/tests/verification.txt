@@ -1,0 +1,81 @@
+Verified on: 2026-11-16
+Python: 3.12.14
+Application SHA-256: 94537196ffc8db2c1c495175e3072f78129518823b74afb963dd76f8bace25e0
+
+test_T01 (grocery_tests.GroceryScenarios.test_T01) ... ok
+test_T02 (grocery_tests.GroceryScenarios.test_T02) ... ok
+test_T03 (grocery_tests.GroceryScenarios.test_T03) ... ok
+test_T04 (grocery_tests.GroceryScenarios.test_T04) ... ok
+test_T05 (grocery_tests.GroceryScenarios.test_T05) ... ok
+test_T06 (grocery_tests.GroceryScenarios.test_T06) ... ok
+test_T07 (grocery_tests.GroceryScenarios.test_T07) ... ok
+test_T08 (grocery_tests.GroceryScenarios.test_T08) ... ok
+test_T09 (grocery_tests.GroceryScenarios.test_T09) ... ok
+test_T10 (grocery_tests.GroceryScenarios.test_T10) ... ok
+test_T11 (grocery_tests.GroceryScenarios.test_T11) ... ok
+test_T12 (grocery_tests.GroceryScenarios.test_T12) ... ok
+test_T13 (grocery_tests.GroceryScenarios.test_T13) ... ok
+test_T14 (grocery_tests.GroceryScenarios.test_T14) ... ok
+test_T15 (grocery_tests.GroceryScenarios.test_T15) ... ok
+test_T16 (grocery_tests.GroceryScenarios.test_T16) ... ok
+test_T17 (grocery_tests.GroceryScenarios.test_T17) ... ok
+test_T18 (grocery_tests.GroceryScenarios.test_T18) ... ok
+test_T19 (grocery_tests.GroceryScenarios.test_T19) ... ok
+test_T20 (grocery_tests.GroceryScenarios.test_T20) ... ok
+test_T21 (grocery_tests.GroceryScenarios.test_T21) ... ok
+test_T22 (grocery_tests.GroceryScenarios.test_T22) ... ok
+test_T23 (grocery_tests.GroceryScenarios.test_T23) ... ok
+test_T24 (grocery_tests.GroceryScenarios.test_T24) ... ok
+test_T25 (grocery_tests.GroceryScenarios.test_T25) ... ok
+test_T26 (grocery_tests.GroceryScenarios.test_T26) ... ok
+test_T27 (grocery_tests.GroceryScenarios.test_T27) ... ok
+test_T28 (grocery_tests.GroceryScenarios.test_T28) ... ok
+test_T29 (grocery_tests.GroceryScenarios.test_T29) ... ok
+test_T30 (grocery_tests.GroceryScenarios.test_T30) ... ok
+test_T31 (grocery_tests.GroceryScenarios.test_T31) ... ok
+test_T32 (grocery_tests.GroceryScenarios.test_T32) ... ok
+test_T33 (grocery_tests.GroceryScenarios.test_T33) ... ok
+test_T34 (grocery_tests.GroceryScenarios.test_T34) ... ok
+test_T35 (grocery_tests.GroceryScenarios.test_T35) ... ok
+test_T36 (grocery_tests.GroceryScenarios.test_T36) ... ok
+test_T37 (grocery_tests.GroceryScenarios.test_T37) ... ok
+test_T38 (grocery_tests.GroceryScenarios.test_T38) ... ok
+test_T39 (grocery_tests.GroceryScenarios.test_T39) ... ok
+test_T40 (grocery_tests.GroceryScenarios.test_T40) ... ok
+test_T41 (grocery_tests.GroceryScenarios.test_T41) ... ok
+test_T42 (grocery_tests.GroceryScenarios.test_T42) ... ok
+test_T43 (grocery_tests.GroceryScenarios.test_T43) ... ok
+test_T44 (grocery_tests.GroceryScenarios.test_T44) ... ok
+test_T45 (grocery_tests.GroceryScenarios.test_T45) ... ok
+test_T46 (grocery_tests.GroceryScenarios.test_T46) ... ok
+test_T47 (grocery_tests.GroceryScenarios.test_T47) ... ok
+test_T48 (grocery_tests.GroceryScenarios.test_T48) ... ok
+test_T49 (grocery_tests.GroceryScenarios.test_T49) ... ok
+test_T50 (grocery_tests.GroceryScenarios.test_T50) ... ok
+test_T51 (grocery_tests.GroceryScenarios.test_T51) ... ok
+test_T52 (grocery_tests.GroceryScenarios.test_T52) ... ok
+test_T53 (grocery_tests.GroceryScenarios.test_T53) ... ok
+test_T54 (grocery_tests.GroceryScenarios.test_T54) ... ok
+test_T55 (grocery_tests.GroceryScenarios.test_T55) ... ok
+test_T56 (grocery_tests.GroceryScenarios.test_T56) ... ok
+test_T57 (grocery_tests.GroceryScenarios.test_T57) ... ok
+test_T58 (grocery_tests.GroceryScenarios.test_T58) ... ok
+test_T59 (grocery_tests.GroceryScenarios.test_T59) ... ok
+test_T60 (grocery_tests.GroceryScenarios.test_T60) ... ok
+test_T61 (grocery_tests.GroceryScenarios.test_T61) ... ok
+test_T62 (grocery_tests.GroceryScenarios.test_T62) ... ok
+test_T63 (grocery_tests.GroceryScenarios.test_T63) ... ok
+test_T64 (grocery_tests.GroceryScenarios.test_T64) ... ok
+test_T65 (grocery_tests.GroceryScenarios.test_T65) ... ok
+test_T66 (grocery_tests.GroceryScenarios.test_T66) ... ok
+test_T67 (grocery_tests.GroceryScenarios.test_T67) ... ok
+test_T68 (grocery_tests.GroceryScenarios.test_T68) ... ok
+test_T69 (grocery_tests.GroceryScenarios.test_T69) ... ok
+test_T70 (grocery_tests.GroceryScenarios.test_T70) ... ok
+test_import_has_no_menu_side_effect (grocery_tests.ProcessChecks.test_import_has_no_menu_side_effect) ... ok
+test_subprocess_restart_and_no_data_files (grocery_tests.ProcessChecks.test_subprocess_restart_and_no_data_files) ... ok
+
+----------------------------------------------------------------------
+Ran 72 tests in 0.145s
+
+OK
