@@ -714,4 +714,4 @@ The [test log](tests/verification.txt) records the actual result. [Recorded runs
 
 ---
 
-**Author:** YOUR_NAME · [GitHub: YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+**Author:** Muhammad Adnan· https://github.com/muhammadadnancss1-ship-it
