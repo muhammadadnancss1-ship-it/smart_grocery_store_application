@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1390" viewBox="0 0 1000 1390" role="img" aria-labelledby="title desc">
+<title id="title">01 / Add New Product</title><desc id="desc">Validate each field before saving a complete dictionary.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#52627B"/></marker></defs>
+<rect width="1000" height="1390" fill="#FFFFFF"/>
+<text x="38" y="44" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start">01 / Add New Product</text>
+<text x="38" y="75" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">Validate each field before saving a complete dictionary.</text>
+<rect x="210.0" y="110.0" width="280" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="137.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Start: menu choice 1</text>
+<polygon points="178.0,190.0 540.0,190.0 522.0,260.0 160.0,260.0" fill="#ECF4FF" stroke="#1763BC" stroke-width="1.6"/>
+<text x="350" y="230.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Read positive product ID</text>
+<polygon points="350,292.0 540.0,350 350,408.0 160.0,350" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="355.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Valid whole number?</text>
+<rect x="670.0" y="315.0" width="280" height="70" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="355.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Show numeric error; retry ID</text>
+<polygon points="350,452.0 540.0,510 350,568.0 160.0,510" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="515.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">ID unique?</text>
+<rect x="670.0" y="475.0" width="280" height="70" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="515.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Reject duplicate ID</text>
+<polygon points="178.0,610.0 540.0,610.0 522.0,680.0 160.0,680.0" fill="#ECF4FF" stroke="#1763BC" stroke-width="1.6"/>
+<text x="350" y="650.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Read name and category</text>
+<polygon points="350,717.0 540.0,775 350,833.0 160.0,775" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="780.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Both non-blank?</text>
+<rect x="670.0" y="740.0" width="280" height="70" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="780.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Reject blank field</text>
+<polygon points="178.0,874.0 540.0,874.0 522.0,956.0 160.0,956.0" fill="#ECF4FF" stroke="#1763BC" stroke-width="1.6"/>
+<text x="350" y="920.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Read price, then stock; validate each</text>
+<polygon points="350,997.0 540.0,1055 350,1113.0 160.0,1055" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="1060.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Both numeric fields valid?</text>
+<rect x="670.0" y="1015.0" width="280" height="80" rx="12" fill="#FFF0F1" stroke="#BC3744" stroke-width="1.5"/>
+<text x="810" y="1049.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Show error; retry current</text>
+<text x="810" y="1072.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">field</text>
+<rect x="160.0" y="1160.0" width="380" height="70" rx="12" fill="#EAF8F0" stroke="#168052" stroke-width="1.5"/>
+<text x="350" y="1200.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Append product; print success</text>
+<rect x="220.0" y="1268.0" width="260" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="1295.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Return to menu</text>
+<polyline points="350,154 350,190" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,260 350,292" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,408 350,452" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,568 350,610" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,680 350,717" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,833 350,874" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,956 350,997" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1113 350,1160" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1230 350,1268" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="540,350 670,350" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="325" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="340" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="540,510 670,510" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="485" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="500" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="540,775 670,775" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="750" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="765" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="540,1055 670,1055" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="1030" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="1045" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<text x="366" y="431" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<text x="366" y="591" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<text x="366" y="856" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<text x="366" y="1136" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<polyline points="810,315 810,225 540,225" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="684.3828125" y="201" width="49.234375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="709" y="216" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Retry</text>
+<polyline points="810,1015 810,915 540,915" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="661.0546875" y="890" width="83.890625" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="703" y="905" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Retry field</text>
+<polyline points="950,510 973,510 973,1290 480,1290" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="950,775 973,775" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="40" y="1341" width="12" height="12" rx="3" fill="#1763BC" stroke="none" stroke-width="1.5"/>
+<text x="60" y="1352" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Input</text>
+<rect x="205" y="1341" width="12" height="12" rx="3" fill="#7544BF" stroke="none" stroke-width="1.5"/>
+<text x="225" y="1352" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Decision</text>
+<rect x="410" y="1341" width="12" height="12" rx="3" fill="#168052" stroke="none" stroke-width="1.5"/>
+<text x="430" y="1352" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Success / output</text>
+<rect x="665" y="1341" width="12" height="12" rx="3" fill="#BC3744" stroke="none" stroke-width="1.5"/>
+<text x="685" y="1352" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Error</text>
+<rect x="810" y="1341" width="12" height="12" rx="3" fill="#9D6200" stroke="none" stroke-width="1.5"/>
+<text x="830" y="1352" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Warning</text>
+</svg>

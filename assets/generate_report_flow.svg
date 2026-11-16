@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2050" viewBox="0 0 1000 2050" role="img" aria-labelledby="title desc">
+<title id="title">07 / Generate Store Report</title><desc id="desc">Explicit loops calculate totals; one product loop checks low stock and both price extrema.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#52627B"/></marker></defs>
+<rect width="1000" height="2050" fill="#FFFFFF"/>
+<text x="38" y="44" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start">07 / Generate Store Report</text>
+<text x="38" y="75" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">Explicit loops calculate totals; one product loop checks low stock and both price extrema.</text>
+<rect x="210.0" y="110.0" width="280" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="137.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Start: menu choice 7</text>
+<polygon points="178.0,190.0 540.0,190.0 522.0,260.0 160.0,260.0" fill="#ECF4FF" stroke="#1763BC" stroke-width="1.6"/>
+<text x="350" y="230.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Read products and recorded sales</text>
+<rect x="160.0" y="310.0" width="380" height="90" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="349.04999999999995" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Loop products to sum stock; loop sales</text>
+<text x="350" y="372.50999999999993" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">to sum revenue</text>
+<rect x="160.0" y="453.0" width="380" height="84" rx="12" fill="#EAF8F0" stroke="#168052" stroke-width="1.5"/>
+<text x="350" y="489.04999999999995" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print product, stock, transaction and</text>
+<text x="350" y="512.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">revenue totals</text>
+<polygon points="350,592.0 540.0,650 350,708.0 160.0,650" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="655.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Inventory empty?</text>
+<rect x="670.0" y="600.0" width="280" height="100" rx="12" fill="#FFF7E3" stroke="#9D6200" stroke-width="1.5"/>
+<text x="810" y="644.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print low stock: None;</text>
+<text x="810" y="667.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">highest / lowest: N/A</text>
+<rect x="160.0" y="760.0" width="380" height="100" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="804.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Initialize extrema from first product;</text>
+<text x="350" y="827.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">low_stock_found = False</text>
+<polygon points="350,912.0 540.0,970 350,1028.0 160.0,970" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="975.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Unvisited product remains?</text>
+<polygon points="350,1072.0 540.0,1130 350,1188.0 160.0,1130" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="1135.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Stock &lt; 5?</text>
+<rect x="670.0" y="1085.0" width="280" height="90" rx="12" fill="#EAF8F0" stroke="#168052" stroke-width="1.5"/>
+<text x="810" y="1124.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Display low-stock product;</text>
+<text x="810" y="1147.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">mark found</text>
+<rect x="160.0" y="1255.0" width="380" height="90" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="1294.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Compare unit price using &gt; and &lt;;</text>
+<text x="350" y="1317.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">update highest / lowest</text>
+<rect x="160.0" y="1395.0" width="380" height="70" rx="12" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="1435.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Advance to next product</text>
+<polygon points="350,1542.0 540.0,1600 350,1658.0 160.0,1600" fill="#F3EDFC" stroke="#7544BF" stroke-width="1.6"/>
+<text x="350" y="1605.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Any low stock found?</text>
+<rect x="670.0" y="1565.0" width="280" height="70" rx="12" fill="#FFF7E3" stroke="#9D6200" stroke-width="1.5"/>
+<text x="810" y="1605.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print None</text>
+<rect x="160.0" y="1735.0" width="380" height="100" rx="12" fill="#EAF8F0" stroke="#168052" stroke-width="1.5"/>
+<text x="350" y="1779.05" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Print highest / lowest headings and full</text>
+<text x="350" y="1802.51" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">product records</text>
+<rect x="220.0" y="1908.0" width="260" height="44" rx="22.0" fill="#F5F7FB" stroke="#52627B" stroke-width="1.5"/>
+<text x="350" y="1935.78" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" text-anchor="middle">Return to menu</text>
+<polyline points="350,154 350,190" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,260 350,310" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,400 350,453" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,537 350,592" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,708 350,760" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,860 350,912" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1028 350,1072" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1188 350,1255" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1345 350,1395" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1658 350,1735" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="350,1835 350,1908" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<polyline points="540,650 670,650" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="587.703125" y="625" width="34.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="640" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Yes</text>
+<polyline points="950,650 978,650 978,1930 480,1930" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="366" y="745" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">No</text>
+<text x="366" y="1060" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<polyline points="540,1130 670,1130" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="587.703125" y="1105" width="34.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="1120" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Yes</text>
+<polyline points="810,1175 810,1300 540,1300" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="366" y="1223" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">No</text>
+<polyline points="350,1465 100,1465 100,970 160,970" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="77.703125" y="1375" width="44.59375" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="100" y="1390" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">Next</text>
+<polyline points="160,970 65,970 65,1600 160,1600" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="49.484375" y="1515" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="65" y="1530" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="540,1600 670,1600" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<rect x="589.484375" y="1575" width="31.03125" height="21" rx="4" fill="#FFFFFF" stroke="none" stroke-width="1.5"/>
+<text x="605" y="1590" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle">No</text>
+<polyline points="810,1635 810,1695 350,1695" fill="none" stroke="#52627B" stroke-width="1.7" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<text x="366" y="1705" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Yes</text>
+<text x="38" y="1992" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start">Strict comparisons keep the first-added product when prices tie.</text>
+<rect x="40" y="2001" width="12" height="12" rx="3" fill="#1763BC" stroke="none" stroke-width="1.5"/>
+<text x="60" y="2012" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Input</text>
+<rect x="205" y="2001" width="12" height="12" rx="3" fill="#7544BF" stroke="none" stroke-width="1.5"/>
+<text x="225" y="2012" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Decision</text>
+<rect x="410" y="2001" width="12" height="12" rx="3" fill="#168052" stroke="none" stroke-width="1.5"/>
+<text x="430" y="2012" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Success / output</text>
+<rect x="665" y="2001" width="12" height="12" rx="3" fill="#BC3744" stroke="none" stroke-width="1.5"/>
+<text x="685" y="2012" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Error</text>
+<rect x="810" y="2001" width="12" height="12" rx="3" fill="#9D6200" stroke="none" stroke-width="1.5"/>
+<text x="830" y="2012" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Warning</text>
+</svg>
