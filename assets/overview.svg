@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1155" viewBox="0 0 1000 1155" role="img" aria-labelledby="title desc">
+<title id="title">Eight operations. One focused application.</title><desc id="desc">Every operation lives in smart_grocery_store.py and returns to the menu, except Exit.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M1,1 L8,5 L1,9 Z" fill="#52627B"/></marker></defs>
+<rect width="1000" height="1155" fill="#FFFFFF"/>
+<text x="38" y="44" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start">Eight operations. One focused application.</text>
+<text x="38" y="75" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start">Every operation lives in smart_grocery_store.py and returns to the menu, except Exit.</text>
+<rect x="38" y="94" width="924" height="32" rx="8" fill="#FFF7E3" stroke="none" stroke-width="1.5"/>
+<text x="53" y="115" fill="#9D6200" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="start">SESSION ONLY  •  Products and sales are cleared when the program closes.</text>
+<rect x="38" y="148" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="52" y="162" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="68" y="182" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">01</text>
+<text x="94" y="183" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Add New Product</text>
+<text x="54" y="208" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="54" y="235" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="116" y="235" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Lists + dictionaries</text>
+<text x="54" y="263" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="116" y="263" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">ID, name, category, price, stock</text>
+<text x="54" y="291" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="116" y="291" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Unique ID; valid fields</text>
+<text x="54" y="319" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="116" y="319" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">A complete product record</text>
+<text x="54" y="347" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="116" y="347" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">append() · helpers · conditions</text>
+<rect x="512" y="148" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="526" y="162" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="542" y="182" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">02</text>
+<text x="568" y="183" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">View All Products</text>
+<text x="528" y="208" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="528" y="235" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="590" y="235" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Iteration + formatting</text>
+<text x="528" y="263" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="590" y="263" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Current product records</text>
+<text x="528" y="291" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="590" y="291" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Handle an empty inventory</text>
+<text x="528" y="319" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="590" y="319" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">All five fields per product</text>
+<text x="528" y="347" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="590" y="347" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">for loop · f-strings</text>
+<rect x="38" y="386" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="52" y="400" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="68" y="420" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">03</text>
+<text x="94" y="421" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Search Product</text>
+<text x="54" y="446" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="54" y="473" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="116" y="473" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Linear search</text>
+<text x="54" y="501" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="116" y="501" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Exact ID or full name</text>
+<text x="54" y="529" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="116" y="529" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Ignore name capitalization</text>
+<text x="54" y="557" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="116" y="557" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Matching records or no match</text>
+<text x="54" y="585" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="116" y="585" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">lower() · loop · flag</text>
+<rect x="512" y="386" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="526" y="400" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="542" y="420" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">04</text>
+<text x="568" y="421" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Update Product Stock</text>
+<text x="528" y="446" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="528" y="473" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="590" y="473" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Conditional updates</text>
+<text x="528" y="501" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="590" y="501" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">ID, action, quantity</text>
+<text x="528" y="529" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="590" y="529" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Add ≥ 1; replace ≥ 0</text>
+<text x="528" y="557" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="590" y="557" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Updated stock count</text>
+<text x="528" y="585" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="590" y="585" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">if / elif / else · mutation</text>
+<rect x="38" y="624" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="52" y="638" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="68" y="658" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">05</text>
+<text x="94" y="659" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Process Customer Sale</text>
+<text x="54" y="684" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="54" y="711" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="116" y="711" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Validation + arithmetic</text>
+<text x="54" y="739" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="116" y="739" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Product ID and quantity</text>
+<text x="54" y="767" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="116" y="767" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Positive quantity within stock</text>
+<text x="54" y="795" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="116" y="795" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Sale record and reduced stock</text>
+<text x="54" y="823" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="116" y="823" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">finite checks · append()</text>
+<rect x="512" y="624" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="526" y="638" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="542" y="658" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">06</text>
+<text x="568" y="659" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">View Sales Records</text>
+<text x="528" y="684" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="528" y="711" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="590" y="711" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Record traversal</text>
+<text x="528" y="739" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="590" y="739" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Completed sales</text>
+<text x="528" y="767" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="590" y="767" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Handle empty sales history</text>
+<text x="528" y="795" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="590" y="795" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Product, quantity and total</text>
+<text x="528" y="823" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="590" y="823" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">for loop · dictionary keys</text>
+<rect x="38" y="862" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="52" y="876" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="68" y="896" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">07</text>
+<text x="94" y="897" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Generate Store Report</text>
+<text x="54" y="922" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="54" y="949" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="116" y="949" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Aggregation + comparisons</text>
+<text x="54" y="977" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="116" y="977" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Products and recorded sales</text>
+<text x="54" y="1005" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="116" y="1005" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Low stock &lt; 5; first-added ties</text>
+<text x="54" y="1033" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="116" y="1033" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Totals, low stock, price extrema</text>
+<text x="54" y="1061" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="116" y="1061" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">for loops · len() · comparisons</text>
+<rect x="512" y="862" width="450" height="218" rx="14" fill="#FFFFFF" stroke="#DCE4F0" stroke-width="1.5"/>
+<rect x="526" y="876" width="32" height="29" rx="8" fill="#ECF4FF" stroke="none" stroke-width="1.5"/>
+<text x="542" y="896" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">08</text>
+<text x="568" y="897" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" text-anchor="start">Exit</text>
+<text x="528" y="922" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" font-weight="400" text-anchor="start">smart_grocery_store.py</text>
+<text x="528" y="949" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">TOPIC</text>
+<text x="590" y="949" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Loop termination</text>
+<text x="528" y="977" fill="#1763BC" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">INPUT</text>
+<text x="590" y="977" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Main-menu choice 8</text>
+<text x="528" y="1005" fill="#7544BF" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">RULE</text>
+<text x="590" y="1005" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Exit only when 8 is selected</text>
+<text x="528" y="1033" fill="#168052" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">OUTPUT</text>
+<text x="590" y="1033" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">Goodbye and program end</text>
+<text x="528" y="1061" fill="#52627B" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" font-weight="700" text-anchor="start">USES</text>
+<text x="590" y="1061" fill="#172B4D" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" font-weight="400" text-anchor="start">while loop · continue · break</text>
+</svg>
